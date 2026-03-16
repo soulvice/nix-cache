@@ -22,14 +22,14 @@ jobs:
       - name: Setup Cachix
         uses: cachix/cachix-action@v16
         with:
-          name: scottmckendry
+          name: soulvice
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Build all packages
         run: |
           nix flake show --json \
             | jq -r '.packages."x86_64-linux" | keys[]' \
-            | xargs -I {} cachix watch-exec scottmckendry -- nix build .#{}
+            | xargs -I {} cachix watch-exec soulvice -- nix build .#{}
 
       - name: Show build outputs
         run: |
