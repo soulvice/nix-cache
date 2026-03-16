@@ -1,0 +1,37 @@
+name: Build and Cache
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+            accept-flake-config = true
+
+      - name: Setup Cachix
+        uses: cachix/cachix-action@v16
+        with:
+          name: scottmckendry
+          authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+
+      - name: Build all packages
+        run: |
+          nix flake show --json \
+            | jq -r '.packages."x86_64-linux" | keys[]' \
+            | xargs -I {} cachix watch-exec scottmckendry -- nix build .#{}
+
+      - name: Show build outputs
+        run: |
+          echo "Built packages:"
+          ls -lh result*
