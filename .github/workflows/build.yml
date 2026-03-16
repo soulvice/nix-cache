@@ -29,7 +29,7 @@ jobs:
         run: |
           nix flake show --json \
             | jq -r '.packages."x86_64-linux" | keys[]' \
-            | xargs -I {} cachix watch-exec soulvice -- nix build .#{}
+            | xargs -I {} cachix watch-exec soulvice -- nix build .#{} --out-link result-{}
 
       - name: Show build outputs
         run: |
