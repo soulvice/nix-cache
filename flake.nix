@@ -42,17 +42,11 @@
     in
     {
       packages.${system} = {
-        niri = {
-          default = niri-custom.packages.${system}.niri;
-          mainline = niri.packages.${system}.niri;
-        };
+        niri-default = niri-custom.packages.${system}.niri;
+        niri-mainline = niri.packages.${system}.niri;
 
-        vicinae = {
-          default = vicinae.packages.${system}.vicinae;
-          extensions = {
-            soulvice = vicinae-extensions-soulvice.packages.${system};
-          };
-        };
+        vicinae = vicinae.packages.${system}.vicinae;
+        vicinae-ext = vicinae-extensions-soulvice.packages.${system};
 
         ghostty = ghostty.packages.${system}.default;
 
