@@ -48,7 +48,7 @@ jobs:
       - name: Setup Cachix
         uses: cachix/cachix-action@v16
         with:
-          name: scottmckendry
+          name: soulvice
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Build all packages
