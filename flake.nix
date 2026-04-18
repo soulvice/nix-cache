@@ -14,6 +14,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    niri-flake = {
+      url = "github:soulvice/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # -- Vicinae & Extensions --------------------
     # --------------------------------------------
     vicinae = {
@@ -42,6 +47,7 @@
       vicinae, 
       vicinae-extensions-soulvice, 
       ghostty, 
+      niri-flake,
       ... 
     }: let
       system = "x86_64-linux";
@@ -63,6 +69,22 @@
 
       devShells.${system}.default = pkgs.mkShell {
         packages = [ ];
+      };
+
+      homeModules = {
+        niri = niri-flake.homeModules.niri;
+        vicinae = vicinae.homeManagerModules.default;
+      };
+
+      nixosModules = {
+        niri = niri-flake.nixosModules.niri;
+      };
+
+      overlays = {
+        vicinae = vicinae.overlays.default;
+        niri = niri.overlays.default;
+        niri-mainline = niri-mainline.overlays.default;
+        ghostty = ghostty.overlays.default;
       };
     };
 }
