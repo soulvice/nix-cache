@@ -28,11 +28,11 @@
         "zon2nix": "zon2nix"
       },
       "locked": {
-        "lastModified": 1776911753,
-        "narHash": "sha256-aMYgDCfC7BfJKb105+bZbppqdEnu46y86YZIuX7cxjc=",
+        "lastModified": 1777006226,
+        "narHash": "sha256-mZjoK+Sr8vbAqYsFCgPESN5R+FVLaFENWoWMe3UTOeg=",
         "owner": "ghostty-org",
         "repo": "ghostty",
-        "rev": "e88c6c099152dd6d2d7e517516e1f3c183c152f7",
+        "rev": "b0d359cbbd945f9f3807327526ef79fcaf0477df",
         "type": "github"
       },
       "original": {
@@ -70,11 +70,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1776424514,
-        "narHash": "sha256-AdH+t9rHmidUCrGLoeFyT6XtSms+TS0o/gZ6aLQHXXw=",
+        "lastModified": 1776950023,
+        "narHash": "sha256-Y7CByqMURZVdC1RyOWOHk0pByugulbKCedNvSM1vtno=",
         "owner": "soulvice",
         "repo": "niri",
-        "rev": "3f31e527a053b1585c1f2893f508c7c47948724f",
+        "rev": "a5c57bd673c3d6d1a7f37cd4395d295689c3f29c",
         "type": "github"
       },
       "original": {
@@ -95,11 +95,11 @@
         "xwayland-satellite-unstable": "xwayland-satellite-unstable"
       },
       "locked": {
-        "lastModified": 1776881464,
-        "narHash": "sha256-Cpt/fgvxlpkb274kNRNicjBdS4BjtkI2/DV9WygAXyU=",
+        "lastModified": 1776951043,
+        "narHash": "sha256-vdNZ2s+2xyg4KTfA0bAhP1w0QtNCls+HJ2ph0fjWjpA=",
         "owner": "soulvice",
         "repo": "niri-flake",
-        "rev": "21193fa98e1ccb85ae242831c41e5d3802d30a49",
+        "rev": "c6cc7b788f709058efa3693bd3ddc84f3b7281e4",
         "type": "github"
       },
       "original": {
@@ -149,11 +149,11 @@
     "niri-unstable": {
       "flake": false,
       "locked": {
-        "lastModified": 1776424514,
-        "narHash": "sha256-AdH+t9rHmidUCrGLoeFyT6XtSms+TS0o/gZ6aLQHXXw=",
+        "lastModified": 1776950023,
+        "narHash": "sha256-Y7CByqMURZVdC1RyOWOHk0pByugulbKCedNvSM1vtno=",
         "owner": "soulvice",
         "repo": "niri",
-        "rev": "3f31e527a053b1585c1f2893f508c7c47948724f",
+        "rev": "a5c57bd673c3d6d1a7f37cd4395d295689c3f29c",
         "type": "github"
       },
       "original": {
@@ -301,11 +301,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1776691047,
-        "narHash": "sha256-A9vBN0QrlmQHbveDox7E3n+Z1lzY8ch3sUcWR+Aiqu8=",
+        "lastModified": 1776954236,
+        "narHash": "sha256-phxwfQQxNcmsOy/stSh+3KNDrClzsy1kz3pmoGB+5cY=",
         "owner": "vicinaehq",
         "repo": "vicinae",
-        "rev": "c0e4aa7dd2c21459cc9015b71841d0847f9749ef",
+        "rev": "5969d68c024e5d37fca35a5e0f415243b1423d4c",
         "type": "github"
       },
       "original": {
@@ -348,11 +348,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1776691047,
-        "narHash": "sha256-A9vBN0QrlmQHbveDox7E3n+Z1lzY8ch3sUcWR+Aiqu8=",
+        "lastModified": 1776954236,
+        "narHash": "sha256-phxwfQQxNcmsOy/stSh+3KNDrClzsy1kz3pmoGB+5cY=",
         "owner": "vicinaehq",
         "repo": "vicinae",
-        "rev": "c0e4aa7dd2c21459cc9015b71841d0847f9749ef",
+        "rev": "5969d68c024e5d37fca35a5e0f415243b1423d4c",
         "type": "github"
       },
       "original": {
@@ -432,11 +432,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1776208985,
-        "narHash": "sha256-IOuRFpbeQ9jSk54OURX5yvjoC759ujgSNjkMKpChdDA=",
+        "lastModified": 1776888758,
+        "narHash": "sha256-OlQexlc8pMXAPhGrT89MtDcPCJv8MsFJcxFPMibRBho=",
         "ref": "refs/heads/main",
-        "rev": "e8ee348125247e7bd74932cc42ac92df90961d5b",
-        "revCount": 1666,
+        "rev": "a380ec6969faf5fae32f08b96f8529a3bca55d42",
+        "revCount": 1672,
         "type": "git",
         "url": "https://codeberg.org/jcollie/zig-overlay.git"
       },
@@ -454,11 +454,11 @@
         "zig": "zig_2"
       },
       "locked": {
-        "lastModified": 1776613749,
-        "narHash": "sha256-9TgoEDSagvvG59NSYvE6WUDrkyJuf0PyVLFKRSySs7M=",
+        "lastModified": 1776999674,
+        "narHash": "sha256-dEuWd2li80+H7f0k7RA25/Od49G91Pn3El3TcbEpONw=",
         "owner": "jcollie",
         "repo": "zon2nix",
-        "rev": "7eacc96583245cfdb04edb31183d9e60eacca51d",
+        "rev": "fe860f11b076bba30708d1efb4830459ecf85f0d",
         "type": "github"
       },
       "original": {
