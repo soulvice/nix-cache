@@ -28,11 +28,11 @@
         "zon2nix": "zon2nix"
       },
       "locked": {
-        "lastModified": 1777067482,
-        "narHash": "sha256-ULqknhBmzNUHdG54EsaeL/ppbmxmZOWZVMx02VLGEWA=",
+        "lastModified": 1777149268,
+        "narHash": "sha256-5SEiQiHKaavGlA+TSqBymXLocWXxDo4GkQAHqC2SxHQ=",
         "owner": "ghostty-org",
         "repo": "ghostty",
-        "rev": "4ceeba4851030e75398cf1e5d3f7d8c7ed645e87",
+        "rev": "67b5783bdd718796a9e2a5d5f9de505f8e047ea5",
         "type": "github"
       },
       "original": {
@@ -70,11 +70,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1776950023,
-        "narHash": "sha256-Y7CByqMURZVdC1RyOWOHk0pByugulbKCedNvSM1vtno=",
+        "lastModified": 1777167854,
+        "narHash": "sha256-HX+jiW5BmACZ859lBaaxfA8yA95r1I0l+s0fUrpF69M=",
         "owner": "soulvice",
         "repo": "niri",
-        "rev": "a5c57bd673c3d6d1a7f37cd4395d295689c3f29c",
+        "rev": "4731f8e30d093604be5616fb08a47c6d6435cd20",
         "type": "github"
       },
       "original": {
@@ -116,11 +116,11 @@
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "lastModified": 1777045529,
-        "narHash": "sha256-EeAwmrvONsovL2qPwKGXF2xGhbo7MySesY3fW2pNLpM=",
+        "lastModified": 1777115961,
+        "narHash": "sha256-ehSMsSpE+0k8r+2Vseu8kangsYxToZv3vinynsDp9zs=",
         "owner": "niri-wm",
         "repo": "niri",
-        "rev": "9438f59e2b9d8deb6fcec5922f8aca18162b673c",
+        "rev": "8ed0da44d974c32c6877d2f4630c314da0717ecb",
         "type": "github"
       },
       "original": {
