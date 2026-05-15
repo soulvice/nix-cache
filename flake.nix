@@ -37,6 +37,13 @@
       url = "github:ghostty-org/ghostty";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # -- MISC PACKAGES ---------------------------
+    # --------------------------------------------
+    sf-mono-liga-src = {
+      url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
+      flake = false;
+    };
   };
 
   outputs =
@@ -48,6 +55,7 @@
       vicinae-extensions-soulvice, 
       ghostty, 
       niri-flake,
+      sf-mono-liga-src,
       ... 
     }: let
       system = "x86_64-linux";
@@ -65,7 +73,29 @@
         # -- Ghostty --------------------------------------------
         ghostty = ghostty.packages.${system}.default;
 
-      } // lib.mapAttrs' (n: v: lib.nameValuePair "vicinae-ext-${n}" v) vicinae-extensions-soulvice.packages.${system};
+      } 
+      // lib.mapAttrs' (n: v: lib.nameValuePair "vicinae-ext-${n}" v) vicinae-extensions-soulvice.packages.${system}
+      // {
+        sf-mono-liga-bin = pkgs.stdenvNoCC.mkDerivation rec {
+          pname = "sf-mono-liga-bin";
+          version = "dev";
+          src = sf-mono-liga-src;
+          dontConfigure = true;
+          installPhase = ''
+            mkdir -p $out/share/fonts/opentype
+            cp -R $src/*.otf $out/share/fonts/opentype/
+          '';
+
+          nativeBuildInputs = [ unzip ];
+
+          meta = with lib; {
+            description = "Patched SF Mono fonts for programming";
+            homepage = "https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized";
+            license = licenses.mit;
+            maintainers = [ maintainers.soulvice ];
+          };
+        };
+      };
 
       devShells.${system}.default = pkgs.mkShell {
         packages = [ ];
