@@ -86,7 +86,7 @@
             cp -R $src/*.otf $out/share/fonts/opentype/
           '';
 
-          nativeBuildInputs = [ unzip ];
+          nativeBuildInputs = with pkgs; [ unzip ];
 
           meta = with lib; {
             description = "Patched SF Mono fonts for programming";
