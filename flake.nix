@@ -6,7 +6,7 @@
     # --------------------------------------------
     niri = {
       url = "github:soulvice/niri";
-      #inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     niri-mainline = {
@@ -16,7 +16,7 @@
 
     niri-flake = {
       url = "github:soulvice/niri-flake";
-      #inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # -- Vicinae & Extensions --------------------
