@@ -89,11 +89,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790255627,
-        "narHash": "sha256-K3DXp1v5DGjlLLWAPXju7nVAyUYonEbORdrneGUBPrA=",
+        "lastModified": 1790256580,
+        "narHash": "sha256-q3GjydvSwb8JebDVW8aoGfaAMuQCieTL+Ppk6WZOURw=",
         "owner": "soulvice",
         "repo": "niri-flake",
-        "rev": "8c81804994bb35154b3722ad3be840f0542fbca0",
+        "rev": "93fb5e6b8a64f2211b8b7395b1996dee6072186f",
         "type": "github"
       },
       "original": {
