@@ -84,21 +84,16 @@
     },
     "niri-flake": {
       "inputs": {
-        "niri-stable": "niri-stable",
-        "niri-unstable": "niri-unstable",
         "nixpkgs": [
           "nixpkgs"
-        ],
-        "nixpkgs-stable": "nixpkgs-stable",
-        "xwayland-satellite-stable": "xwayland-satellite-stable",
-        "xwayland-satellite-unstable": "xwayland-satellite-unstable"
+        ]
       },
       "locked": {
-        "lastModified": 1790156852,
-        "narHash": "sha256-oPAeVcVUBwldU+7mQrHzAl3lKO9Z4u3OL/QzKqcuo+Y=",
+        "lastModified": 1790254210,
+        "narHash": "sha256-TItxUDphMDfu0J/rDLaHBLG0TvMCYiaPXI4W2Ll9sWI=",
         "owner": "soulvice",
         "repo": "niri-flake",
-        "rev": "e6fd23efdb32edc29b6f105c71d05c4800f402d2",
+        "rev": "3da2b2cc9b73e8c0389ba20898c79379638143af",
         "type": "github"
       },
       "original": {
@@ -121,39 +116,6 @@
       },
       "original": {
         "owner": "niri-wm",
-        "repo": "niri",
-        "type": "github"
-      }
-    },
-    "niri-stable": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1756556321,
-        "narHash": "sha256-RLD89dfjN0RVO86C/Mot0T7aduCygPGaYbog566F0Qo=",
-        "owner": "soulvice",
-        "repo": "niri",
-        "rev": "01be0e65f4eb91a9cd624ac0b76aaeab765c7294",
-        "type": "github"
-      },
-      "original": {
-        "owner": "soulvice",
-        "ref": "v25.08",
-        "repo": "niri",
-        "type": "github"
-      }
-    },
-    "niri-unstable": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1790156156,
-        "narHash": "sha256-8Dkfuwbi8J5Pqib+PHsgv4OIA10nZcbHGhjgdRHlrPA=",
-        "owner": "soulvice",
-        "repo": "niri",
-        "rev": "4068961a8839f5c84a0ffc9ef35a25bed92ad24b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "soulvice",
         "repo": "niri",
         "type": "github"
       }
@@ -202,22 +164,6 @@
       "original": {
         "owner": "NixOS",
         "ref": "nixos-24.11",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs-stable": {
-      "locked": {
-        "lastModified": 1782847189,
-        "narHash": "sha256-twXPFqFsrrY5r28Zh7Homgcp2gUMBgQ6WDS98Q/3xFI=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "b6018f87da91d19d0ab4cf979885689b469cdd41",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-25.11",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -471,39 +417,6 @@
       "original": {
         "owner": "vicinaehq",
         "repo": "vicinae",
-        "type": "github"
-      }
-    },
-    "xwayland-satellite-stable": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1755491097,
-        "narHash": "sha256-m+9tUfsmBeF2Gn4HWa6vSITZ4Gz1eA1F5Kh62B0N4oE=",
-        "owner": "Supreeeme",
-        "repo": "xwayland-satellite",
-        "rev": "388d291e82ffbc73be18169d39470f340707edaa",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Supreeeme",
-        "ref": "v0.7",
-        "repo": "xwayland-satellite",
-        "type": "github"
-      }
-    },
-    "xwayland-satellite-unstable": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1788991189,
-        "narHash": "sha256-0TxfMgqW0/BLD4M942c5DCKYrtPvzsPJwvdcco4LQUM=",
-        "owner": "Supreeeme",
-        "repo": "xwayland-satellite",
-        "rev": "add2795134593faafce60e404a0a75df68e9ee0c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Supreeeme",
-        "repo": "xwayland-satellite",
         "type": "github"
       }
     },
