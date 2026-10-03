@@ -28,11 +28,11 @@
         "zon2nix": "zon2nix"
       },
       "locked": {
-        "lastModified": 1790889471,
-        "narHash": "sha256-OiL/+V1p0Ux2n+Sk1jhuT9p2EDOSok9mXUDdQFetjI4=",
+        "lastModified": 1790984255,
+        "narHash": "sha256-GnQDLkPwrzB+0p+0HCVznDE0o9WBXhIeMyC5/EGvNGo=",
         "owner": "ghostty-org",
         "repo": "ghostty",
-        "rev": "83edd491e3024ae5e50393d62877b8897da1cccd",
+        "rev": "822e84272f60e320526e6c2c223ccdf786d334c9",
         "type": "github"
       },
       "original": {
@@ -358,11 +358,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1790771562,
-        "narHash": "sha256-HuBu9NU+L2H/BW07H85E9A5/sT2ctOpGSBtB4IfteTk=",
+        "lastModified": 1790972264,
+        "narHash": "sha256-JAi32uRoi5NxQAbLAJPF1m/ixqGbNs9e6ja3meHLvZw=",
         "owner": "vicinaehq",
         "repo": "vicinae",
-        "rev": "7f1d1d96ea7ca9b08130962c91d0469df24a1362",
+        "rev": "7733e952e88ec2b44340f35b93846d1158e3fd24",
         "type": "github"
       },
       "original": {
@@ -407,11 +407,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790771562,
-        "narHash": "sha256-HuBu9NU+L2H/BW07H85E9A5/sT2ctOpGSBtB4IfteTk=",
+        "lastModified": 1790972264,
+        "narHash": "sha256-JAi32uRoi5NxQAbLAJPF1m/ixqGbNs9e6ja3meHLvZw=",
         "owner": "vicinaehq",
         "repo": "vicinae",
-        "rev": "7f1d1d96ea7ca9b08130962c91d0469df24a1362",
+        "rev": "7733e952e88ec2b44340f35b93846d1158e3fd24",
         "type": "github"
       },
       "original": {
