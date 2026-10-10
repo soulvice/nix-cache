@@ -2,7 +2,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    # -- Niri --------------------------- 
+    # -- Niri ---------------------------
     # --------------------------------------------
     niri = {
       url = "github:soulvice/niri";
@@ -47,16 +47,16 @@
   };
 
   outputs =
-    { 
-      nixpkgs, 
-      niri, 
-      niri-mainline, 
-      vicinae, 
-      vicinae-extensions-soulvice, 
-      ghostty, 
+    {
+      nixpkgs,
+      niri,
+      niri-mainline,
+      vicinae,
+      vicinae-extensions-soulvice,
+      ghostty,
       niri-flake,
       sf-mono-liga-src,
-      ... 
+      ...
     }: let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -68,12 +68,20 @@
         niri-mainline = niri-mainline.packages.${system}.niri;
 
         # -- Vicinae --------------------------------------------
-        vicinae = vicinae.packages.${system}.default;
+        #vicinae = vicinae.packages.${system}.default;
+        vicinae = vicinae.packages.${system}.default.override {
+          numen = (vicinae.inputs.numen.packages.${system}.numen.override {
+            withRepl = false;
+          }).override {
+            stdenv = pkgs.gcc15Stdenv;
+          };
+        };
+
 
         # -- Ghostty --------------------------------------------
         ghostty = ghostty.packages.${system}.default;
 
-      } 
+      }
       // lib.mapAttrs' (n: v: lib.nameValuePair "vicinae-ext-${n}" v) vicinae-extensions-soulvice.packages.${system}
       // {
         sf-mono-liga-bin = pkgs.stdenvNoCC.mkDerivation rec {
